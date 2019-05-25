@@ -1,6 +1,6 @@
-# VIM
+# NVIM
 
-## Specify the VIM source file in ~/.config/nvim/init.vim using:
+## Specify the NVIM source file in ~/.config/nvim/init.vim using:
 source ~/PATH/config.vim
 
 # TMUX

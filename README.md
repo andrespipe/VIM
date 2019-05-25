@@ -12,9 +12,9 @@ source ~/PATH/tmux.conf
 
 Key binding (Prefix) | Description
 ---------------------|--------------
-a
-r
--
+a | Begining of the line
+r | Reload config file
+- | 
 |
 h
 j

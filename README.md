@@ -11,7 +11,7 @@ source ~/PATH/tmux.conf
 ### TMUX commands
 <sub>The default prefix is CTRL + b </sub>
 
-Key binding (Prefix) | Description
+Key binding (Prefix+) | Description
 ---------------------|--------------
 a | Begining of the line
 r | Reload config file

@@ -41,3 +41,7 @@ C a | Last used window
 v | Copy mode
 y | Copy selection
 Enter | Copy selection
+
+<sub>
+  Taken from  <a href="https://mbobin.me/tmux/2018/10/06/tmux-configs.html">https://mbobin.me/tmux/2018/10/06/tmux-configs.html</a>
+</sub>

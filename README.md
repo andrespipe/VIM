@@ -28,7 +28,7 @@ C ← | Resize to left
 C → | Resize to right
 C ↑ | Resize to top
 C ↓ | Resize to down
-&#9532; | Zoom in/out panel
+&#43; | Zoom in/out panel
 I | Sync window panes
 c | New window
 n | Next window

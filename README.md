@@ -14,7 +14,7 @@ Key binding (Prefix) | Description
 ---------------------|--------------
 a | Begining of the line
 r | Reload config file
-&#268A | Horizontal split
+&#268A; | Horizontal split
 | | Vertical split
 h | Left pane
 j | Bottom pane

@@ -11,7 +11,7 @@ source ~/PATH/tmux.conf
 ### TMUX commands
 
 Key binding (Prefix) | Description
------------------------------------
+---------------------|--------------
 a
 r
 -

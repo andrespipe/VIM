@@ -9,6 +9,7 @@ source ~/PATH/config.vim
 source ~/PATH/tmux.conf
 
 ### TMUX commands
+<sub>The default prefix is CTRL + b </sub>
 
 Key binding (Prefix) | Description
 ---------------------|--------------

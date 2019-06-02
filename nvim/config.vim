@@ -10,7 +10,9 @@ Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 " Formating 
 Plug 'sbdchd/neoformat'
 
-" Make sure you use single quotes
+" Status line
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
@@ -25,6 +27,14 @@ Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'ayu-theme/ayu-vim'
 " Initialize plugin system
+
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
 call plug#end()
 
 set termguicolors     " enable true colors support

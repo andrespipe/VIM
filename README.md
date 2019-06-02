@@ -45,3 +45,6 @@ Enter | Copy selection
 <sub>
   Taken from  <a href="https://mbobin.me/tmux/2018/10/06/tmux-configs.html">https://mbobin.me/tmux/2018/10/06/tmux-configs.html</a>
 </sub>
+
+# TMUXINATOR
+https://thoughtbot.com/blog/templating-tmux-with-tmuxinator

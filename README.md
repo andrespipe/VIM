@@ -48,3 +48,7 @@ Enter | Copy selection
 
 # TMUXINATOR
 https://thoughtbot.com/blog/templating-tmux-with-tmuxinator
+
+## Env 
+
+export EDITOR=nvim

@@ -57,3 +57,12 @@ brew install nexeck/homebrew-tmuxinator/tmuxinator
 ## Env 
 
 export EDITOR=nvim
+
+# Environment variables ~/.bash_profile
+
+export EDITOR=nvim
+export NG_WORKDIR="path"
+export BACK_WORKDIR="path"
+export DOCKR_WORKDIR="path"
+
+alias tx='tmuxcinator'

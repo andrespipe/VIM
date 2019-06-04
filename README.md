@@ -51,6 +51,7 @@ https://thoughtbot.com/blog/templating-tmux-with-tmuxinator
 
 ## Install
 brew tap nexeck/homebrew-tmuxinator
+
 brew install nexeck/homebrew-tmuxinator/tmuxinator
 
 ## Env 

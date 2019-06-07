@@ -54,6 +54,15 @@ brew tap nexeck/homebrew-tmuxinator
 
 brew install nexeck/homebrew-tmuxinator/tmuxinator
 
-## Env 
+## Environment variables ~/.bash_profile
 
-export EDITOR=nvim
+export EDITOR=nvim  
+export NG_WORKDIR="path"  
+export BACK_WORKDIR="path"  
+export DOCKR_WORKDIR="path" 
+export TX_SPACES="path"
+
+alias tx='tmuxcinator'
+
+### Start space from a specific path
+tmuxinator start -p /$TX_SPACES/my_config.yml

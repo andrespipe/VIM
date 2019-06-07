@@ -54,10 +54,6 @@ brew tap nexeck/homebrew-tmuxinator
 
 brew install nexeck/homebrew-tmuxinator/tmuxinator
 
-## Env 
-
-export EDITOR=nvim
-
 ## Environment variables ~/.bash_profile
 
 export EDITOR=nvim  

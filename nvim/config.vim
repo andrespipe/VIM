@@ -5,7 +5,15 @@ call plug#begin('~/.vim/plugged')
 
 " ANGULAR
 Plug 'sheerun/vim-polyglot'
-" Language Completion
+" Language Completion and sintax validation
+" CocInstall coc-json
+" CocInstall coc-tsserver
+" CocInstall coc-html
+" CocInstall coc-css
+" CocInstall coc-yaml
+" CocInstall coc-highlight
+" CocInstall coc-emmet
+" CocInstall coc-angular
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 " Formating 
 Plug 'sbdchd/neoformat'
@@ -34,12 +42,19 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ }
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-
+   
 call plug#end()
 
 set termguicolors     " enable true colors support
 let ayucolor="mirage" " for mirage version of theme
 colorscheme ayu
+
+" Status bar
+let g:airline_theme='atomic'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+
+let g:airline_section_a = airline#section#create(['mode', ' ', 'branch'])
 
 set nonumber
 set nu

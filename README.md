@@ -3,6 +3,9 @@
 ## Specify the NVIM source file in ~/.config/nvim/init.vim using:
 source ~/PATH/config.vim
 
+## Install python for nivim
+pip install --user neovim
+
 # TMUX
 
 ## Specify the TMUX source file in ~/.tmux.conf using:
@@ -59,7 +62,7 @@ brew install nexeck/homebrew-tmuxinator/tmuxinator
 export EDITOR=nvim  
 export NG_WORKDIR="path"  
 export BACK_WORKDIR="path"  
-export DOCKR_WORKDIR="path" 
+export DOCKR_WORKDIR="path"  
 export TX_SPACES="path"
 
 alias tx='tmuxcinator'

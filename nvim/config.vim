@@ -31,9 +31,15 @@ Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 " On-demand loading
 Plug 'scrooloose/nerdtree'
 
+" GIT
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'xuyuanp/nerdtree-git-plugin'
+
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'ayu-theme/ayu-vim'
+
 " Initialize plugin system
 
 Plug 'autozimu/LanguageClient-neovim', {
@@ -51,10 +57,12 @@ colorscheme ayu
 
 " Status bar
 let g:airline_theme='atomic'
+
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 let g:airline_section_a = airline#section#create(['mode', ' ', 'branch'])
 
+" Text editor
 set nonumber
 set nu

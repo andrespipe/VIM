@@ -3,6 +3,9 @@
 ## Specify the NVIM source file in ~/.config/nvim/init.vim using:
 source ~/PATH/config.vim
 
+## Install python for nivim
+pip install --user neovim
+
 # TMUX
 
 ## Specify the TMUX source file in ~/.tmux.conf using:

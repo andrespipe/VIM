@@ -5,14 +5,12 @@ windows:
   - angular:
       layout: main-horizontal
       panes:
-        - nvim
-        # This variable should be setted before with 'export NG_WORKDIR="/Users/andresm/Documents/Repos/renewals-fe"'
+        - cd $NG_WORKDIR; nvim
         - cd $NG_WORKDIR; ng serve --configuration=local
-        - cd $NG_WORKDIR; git status
+        - cd $NG_WORKDIR; git pull; git status
   - backend: 
       layout: main-vertical
       panes:
-        # This vareiable should be setted before with 'export BACK_WORKDIR="/Users/andresm/Documents/Repos/renewals-microservice-application"'
         - cd $BACK_WORKDIR; ./gradlew :core-service:clean :core-service:build; ./gradlew :core-service:startinstance -Pprofile=local
         - cd $DOCKR_WORKDIR; docker-compose up
         - cd $BACK_WORKDIR

@@ -40,6 +40,9 @@ Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'ayu-theme/ayu-vim'
 
+" Icons
+Plug 'ryanoasis/vim-webdevicons'
+
 " Initialize plugin system
 
 Plug 'autozimu/LanguageClient-neovim', {
@@ -64,5 +67,43 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline_section_a = airline#section#create(['mode', ' ', 'branch'])
 
 " Text editor
+set encoding=utf8
+
+" let g:webdevicons_enable = 1
+" let g:webdevicons_enable_nerdtree = 1
+" let g:webdevicons_enable_airline_tabline = 1
+" let g:webdevicons_enable_airline_statusline = 1
+" let g:WebDevIconsUnicodeDecorateFileNodes = 1
+" let g:WebDevIconsUnicodeGlyphDoubleWidth = 1
+" let g:webdevicons_conceal_nerdtree_brackets = 1
+" let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
+" let g:WebDevIconsUnicodeDecorateFileNodesDefaultSymbol = 'ƛ'
+" let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+" let WebDevIconsUnicodeDecorateFolderNodesExactMatches = 1
+" let g:WebDevIconsUnicodeDecorateFolderNodeDefaultSymbol = 'ƛ'
+" let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
+" let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['js'] = 'ƛ'
+" let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols = {} " needed
+" let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['MyReallyCoolFile.okay'] = 'ƛ'
+" let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
+" let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['myext'] = 'ƛ'
+
+" NERDTress File highlighting
+function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+ exec 'autocmd FileType nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+ exec 'autocmd FileType nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+
+call NERDTreeHighlightFile('ts', 'none', 'none', '#59c2ff', 'none')
+call NERDTreeHighlightFile('spec.ts', 'none', 'none', '#5ccfe6', 'none')
+call NERDTreeHighlightFile('module.ts', 'none', 'none', '#ff3333', 'none')
+call NERDTreeHighlightFile('pipe.ts', 'none', 'none', '#009688', 'none')
+call NERDTreeHighlightFile('service.ts', 'none', 'none', '#ffcc66', 'none')
+call NERDTreeHighlightFile('html', 'none', 'none', '#f29e74', 'none')
+call NERDTreeHighlightFile('scss', 'none', 'none', '#f27983', 'none')
+call NERDTreeHighlightFile('json', 'none', 'none', '#f29e74', 'none')
+call NERDTreeHighlightFile('ico', 'none', 'none', '#ffee99', 'none')
+
+let g:airline_powerline_fonts = 1
 set nonumber
 set nu

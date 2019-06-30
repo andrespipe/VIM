@@ -11,6 +11,10 @@ windows:
   - backend: 
       layout: main-vertical
       panes:
-        - cd $BACK_WORKDIR; ./gradlew :core-service:clean :core-service:build; ./gradlew :core-service:startinstance -Pprofile=local
-        - cd $DOCKR_WORKDIR; docker-compose up
+        - cd $BACK_WORKDIR;
+          git pull;
+          ./gradlew :core-service:clean :core-service:build;
+          ./gradlew :core-service:startinstance -Pprofile=local
+        - cd $DOCKR_WORKDIR;
+          docker-compose up
         - cd $BACK_WORKDIR

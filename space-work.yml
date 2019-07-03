@@ -13,6 +13,7 @@ windows:
       panes:
         - cd $BACK_WORKDIR;
           git pull;
+          open -a "Google Chrome" https://localhost:4200;
           ./gradlew :core-service:clean :core-service:build;
           ./gradlew :core-service:startinstance -Pprofile=local
         - cd $DOCKR_WORKDIR;

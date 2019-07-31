@@ -1,0 +1,10 @@
+name: space-work-test
+root: ~/Documents/Repos
+
+windows:
+  - angular:
+      layout: main-horizontal
+      panes:
+        - cd $NG_WORKDIR; nvim
+        - cd $NG_WORKDIR; ng test --code-coverage
+        - cd $NG_WORKDIR; git status

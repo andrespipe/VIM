@@ -64,6 +64,8 @@ export NG_WORKDIR="path"
 export BACK_WORKDIR="path"  
 export DOCKR_WORKDIR="path"  
 export TX_SPACES="path"
+export NG_RAISE_FE="path"
+export SNX_DIR="path"
 
 alias tx='tmuxcinator'
 

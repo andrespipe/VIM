@@ -1,0 +1,21 @@
+# /Users/andresm/.config/tmuxinator/space-raise.yml
+
+name: space-raise
+root: ~/
+
+windows:
+  - angular:
+      layout: main-horizontal
+      panes:
+        - cd $NG_RAISE_FE; nvim
+        - cd $NG_RAISE_FE; npm start
+        - open -a "Google Chrome" https://localhost:4200;
+          clear;
+          cd $NG_RAISE_FE;
+          git pull;
+          git status;
+  - server:
+      layout: main-vertical
+      panes:
+        - cd $SNX_DIR; /usr/local/bin/python3 ./snxconnect -H 'eqazccentral.eqbank.ca' -U 'amolina.blanclabs@equitablebank.onmicrosoft.com' -L 'Standard' -R 'ssl_vpn_EQ_Bank_AD' -SC
+        - cd $NG_RAISE_FE; pbpaste > RAISE_SESSION; cat RAISE_SESSION

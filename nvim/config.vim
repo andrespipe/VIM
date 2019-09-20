@@ -107,3 +107,6 @@ call NERDTreeHighlightFile('ico', 'none', 'none', '#ffee99', 'none')
 let g:airline_powerline_fonts = 1
 set nonumber
 set nu
+set tabstop=2
+set shiftwidth=2
+set expandtab

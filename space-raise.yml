@@ -9,11 +9,7 @@ windows:
       panes:
         - cd $NG_RAISE_FE; nvim
         - cd $NG_RAISE_FE; npm start
-        - open -a "Google Chrome" https://localhost:4200;
-          clear;
-          cd $NG_RAISE_FE;
-          git pull;
-          git status;
+        - open -a "Google Chrome" https://localhost:4200;cd $NG_RAISE_FE;git pull;git status;clear;
   - server:
       layout: main-vertical
       panes:

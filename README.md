@@ -57,7 +57,7 @@ brew tap nexeck/homebrew-tmuxinator
 
 brew install nexeck/homebrew-tmuxinator/tmuxinator
 
-## Environment variables ~/.bash_profile
+## Environment variables (~/.bash_profile => For bash, ~/.bashrc => For fish)
 
 export EDITOR=nvim  
 export NG_WORKDIR="path"  

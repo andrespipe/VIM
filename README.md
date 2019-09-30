@@ -74,7 +74,7 @@ alias tx='tmuxcinator'
 set NG_WORKDIR "path"  
 set BACK_WORKDIR "path"  
 set DOCKR_WORKDIR "path"  
-set TX_SPACES "path" 
+set TX_SPACES "path"  
 set NG_RAISE_FE "path"  
 set SNX_DIR "path" 
 

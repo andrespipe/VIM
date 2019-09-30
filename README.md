@@ -57,7 +57,7 @@ brew tap nexeck/homebrew-tmuxinator
 
 brew install nexeck/homebrew-tmuxinator/tmuxinator
 
-## Environment variables (~/.bash_profile => For bash, ~/.bashrc => For fish)
+## Environment variables (~/.bash_profile => For bash)
 
 export EDITOR=nvim  
 export NG_WORKDIR="path"  
@@ -68,6 +68,15 @@ export NG_RAISE_FE="path"
 export SNX_DIR="path"  
 
 alias tx='tmuxcinator'
+
+## Environment variables (~/.config/fish/config.fish => For fish shell)
+
+set NG_WORKDIR "path"
+set BACK_WORKDIR "path"
+set DOCKR_WORKDIR "path"
+set TX_SPACES "path"
+set NG_RAISE_FE "path"
+set SNX_DIR "path"
 
 ### Start space from a specific path
 tmuxinator start -p /$TX_SPACES/my_config.yml

@@ -1,5 +1,9 @@
 # NVIM
 
+Install this:
+
+https://github.com/junegunn/vim-plug
+
 ## Specify the NVIM source file in ~/.config/nvim/init.vim using:
 source ~/PATH/config.vim
 

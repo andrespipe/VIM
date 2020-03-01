@@ -12,6 +12,8 @@ pip install --user neovim
 
 # TMUX
 
+brew install tmux
+
 ## Specify the TMUX source file in ~/.tmux.conf using:
 source ~/PATH/tmux.conf
 

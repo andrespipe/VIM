@@ -12,7 +12,9 @@ pip install --user neovim
 
 # TMUX
 
-brew install tmux
+brew install tmux  
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm  
 
 ## Specify the TMUX source file in ~/.tmux.conf using:
 source ~/PATH/tmux.conf

@@ -88,3 +88,6 @@ set SNX_DIR "path"
 
 ### Start space from a specific path
 tmuxinator start -p /$TX_SPACES/my_config.yml
+
+
+https://medium.com/tuannguyendotme/set-up-the-fish-shell-on-mac-step-by-step-6a77bcb2687c

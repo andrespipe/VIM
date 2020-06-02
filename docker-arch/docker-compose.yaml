@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  arch:
+    image: archlinux
+    command: tail -F anything
+    ports: 
+      - 8090:8090
+    volumes:
+      - /Users/andres/Documents/bl:/repos
+    container_name: archOS
+    
